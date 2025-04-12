@@ -284,7 +284,7 @@ resource EventHubNameSpaceNetworkrulesets 'Microsoft.EventHub/namespaces/network
 
 resource apiConnection 'Microsoft.Web/connections@2016-06-01' = {
   name: 'eventhubsconnection'
-  location: 'eastus2'
+  location: location 
   properties: {
     api: {
       id: subscriptionResourceId('Microsoft.Web/locations/managedApis', location, 'eventhubs')
