@@ -38,6 +38,9 @@ resource fabric 'Microsoft.Fabric/capacities@2023-11-01' = {
 resource logicapp_pause_fabric 'Microsoft.Logic/workflows@2019-05-01' = {
   name: 'logicapp-pause-fabric'
   location: location
+  dependsOn: [
+    fabric
+    ]
   identity: {
     type: 'SystemAssigned'
   }
