@@ -1,4 +1,4 @@
-# AZD Trainer-Demo-Deploy Starter template
+# Track data from the International Space Station using LogicApps and EventHubs
 
 This template could be used as a starting point for creating your own AZD-compatible templates, which you will contribute to [Trainer-Demo-Deploy](https://aka.ms/trainer-demo-deploy). 
 
