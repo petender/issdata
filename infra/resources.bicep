@@ -57,16 +57,13 @@ resource logicapp_pause_fabric 'Microsoft.Logic/workflows@2019-05-01' = {
         }
       }
       triggers: {
-        Every_15_minutes: {
+        Every_4_hours: {
           recurrence: {
-            frequency: 'Week'
-            interval: 1
+            frequency: 'Hour'
+            interval: 4
             schedule: {
-              hours: [
-                '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23'
-              ]
               minutes: [
-                0, 15, 30, 45
+                0
               ]
               weekDays: [
                 'Monday'
@@ -75,6 +72,11 @@ resource logicapp_pause_fabric 'Microsoft.Logic/workflows@2019-05-01' = {
                 'Thursday'
                 'Friday'
               ]
+              hours: [
+              8
+             12
+             16
+             20 
             }
             timeZone: 'Romance Standard Time'
           }
