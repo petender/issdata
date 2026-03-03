@@ -10,7 +10,7 @@ param environmentName string
 param location string
 
 @description('The Azure admin alias (admin@domain.onmicrosoft.com) to deploy the resources to')
-param adminalias string
+param azureadminalias string
 
 @description('Connections object for the Logic App.')
 
@@ -41,7 +41,7 @@ module resources './resources.bicep' = {
     evhubnamespace: 'evhub${resourceToken}'
     evhubname: 'evhub${resourceToken}'
     location: location
-    admin: adminalias
+    admin: azureadminalias
     sku: 'F2'
   }
 }
